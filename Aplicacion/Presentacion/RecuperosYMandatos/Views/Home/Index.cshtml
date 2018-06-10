@@ -5,7 +5,10 @@
 }
 @model RecuperosYMandatos.Models.Deudor
 <div id='datoIdentificacion'>
-    @using (Ajax.BeginForm("DeudorGetById", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion", OnBegin = "deudor.confirmarDatoIdentificacion('#contenedordatoIdentificacion');" }))
+    @*@using (Ajax.BeginForm("DeudorGetById", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion", OnBegin = "deudor.confirmarDatoIdentificacion('#contenedordatoIdentificacion');" }))*@
+
+
+   @using (Ajax.BeginForm("InformeDePago", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion" }))
     {
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 form-box">
@@ -45,7 +48,7 @@
                                 @*<button onclick="deudor.confirmarDatoIdentificacion('@Url.Action("DeudorGetById", "Deudor")', '#contenedorDatosCodigo', '#modelAdvertenciaErrorCodigoValidacion')" class="btn btn-anses">
                                         <strong>Confirmar</strong>
                                     </button>*@
-                                <button type="submit" class="btn">Contiunuar</button>
+                                <button type="submit" class="btn">Regístrese</button>
                                 
                             </div>
                         </div>

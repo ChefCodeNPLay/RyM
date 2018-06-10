@@ -35,5 +35,10 @@ namespace RecuperosYMandatos.Controllers
         {
             return View();
         }
+
+        public ActionResult OlvidoContraseña()
+        {
+            return View();
+        }
     }
 }

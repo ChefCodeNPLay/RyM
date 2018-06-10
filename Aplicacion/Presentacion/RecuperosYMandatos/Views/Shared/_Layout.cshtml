@@ -24,26 +24,28 @@
     <!-- Top content -->
     <div class="container">
         
-        <span class="pull-left" style="margin-top:10px;">
-            @Html.ActionLink("Home", "Index", "Home", new { idioma = "es-MX" })
-        </span>
-        <div class="row">
-            <span class="pull-right" style="margin-top:10px;">
-                @*@Html.ActionLink("Español", "SetLanguage", "Home", new { idioma = "es-MX" }, new { @class = "btn btn-primary btn-lg" })
-                @Html.ActionLink("English", "SetLanguage", new { idioma = "en-US" }, new { @class = "btn btn-primary btn-lg" })
-                @Html.ActionLink("Portuges", "SetLanguage", new { idioma = "pt-BR" }, new { @class = "btn btn-primary btn-lg" })*@
-            </span>
-        </div>
+        @*<span class="pull-left" style="margin-top:10px;">
+         @Html.ActionLink("Home", "Index", "Home", new { idioma = "es-MX" })
+     </span>
+    <div class="row">
+         <span class="pull-right" style="margin-top:10px;">
+             @Html.ActionLink("Español", "SetLanguage", "Home", new { idioma = "es-MX" }, new { @class = "btn btn-primary btn-lg" })
+             @Html.ActionLink("English", "SetLanguage", new { idioma = "en-US" }, new { @class = "btn btn-primary btn-lg" })
+             @Html.ActionLink("Portuges", "SetLanguage", new { idioma = "pt-BR" }, new { @class = "btn btn-primary btn-lg" })
+         </span>
+     </div>*@
+        <div style="float: left; position: absolute">@Html.ActionLink("Home", "Index", "Home", new { idioma = "es-MX" })</div>
+         
+                    <div class="col-sm-8 col-sm-offset-2 text active;" style="padding-bottom:20px;">
+                        <h1 style="font-family:'Arial Rounded MT'; color: #fff">Recuperos y mandatos S.A.</h1>
+                    </div>
+               
     </div>
                    
     <div class="top-content">
-        <div class="inner-bg">
+        <div class="">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 text active; ">
-                        <h1 style="font-family:'Arial Rounded MT';">Recuperos y mandatos S.A.</h1>
-                    </div>
-                </div>
+               
                 <div class="row">
                     <div class="container body-content">
                         @RenderBody()

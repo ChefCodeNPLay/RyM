@@ -277,7 +277,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Preguntas\Index.cshtml" />
-    <Content Include="Views\Preguntas\Pregunta2.cshtml" />
+    <Content Include="Views\Preguntas\Pregunta1.cshtml" />
     <Content Include="Views\Home\Registracion.cshtml" />
     <Content Include="Views\Preguntas\IndexPartial.cshtml" />
     <Content Include="Views\Home\DatosContacto.cshtml" />
@@ -286,6 +286,10 @@
     <Content Include="Views\Shared\Partials\ModalGenerico.cshtml" />
     <Content Include="Views\Shared\Partials\ModalGenericoListErrores.cshtml" />
     <Content Include="Views\Home\SinIdentificacion.cshtml" />
+    <Content Include="Views\Home\OlvidoContraseña.cshtml" />
+    <Content Include="Views\Deudor\Acreencias.cshtml" />
+    <Content Include="Views\Deudor\ComposicionDeuda.cshtml" />
+    <Content Include="Views\Deudor\InformeDePago.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

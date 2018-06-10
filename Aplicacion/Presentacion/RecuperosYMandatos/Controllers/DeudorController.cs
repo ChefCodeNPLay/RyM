@@ -25,5 +25,18 @@ namespace RecuperosYMandatos.Controllers
             new Deudor().SaveOrUpdate(unDeudor);
             return PartialView("~/Views/Home/ConfirmacionValidacion.cshtml");
         }
+
+        public ActionResult Acreencias()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionDeuda()
+        {
+            return PartialView();
+        }
+        public ActionResult InformeDePago()
+        {
+            return PartialView();
+        }
     }
 }

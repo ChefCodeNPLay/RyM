@@ -14,10 +14,11 @@ namespace RecuperosYMandatos.Controllers
             return View();
         }
 
-        public ActionResult Pregunta2()
+        public ActionResult Pregunta1()
         {
             return View();
         }
+
 
         public ActionResult Confirmacion()
         {
