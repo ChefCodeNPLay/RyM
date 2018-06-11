@@ -290,6 +290,13 @@
     <Content Include="Views\Deudor\Acreencias.cshtml" />
     <Content Include="Views\Deudor\ComposicionDeuda.cshtml" />
     <Content Include="Views\Deudor\InformeDePago.cshtml" />
+    <Content Include="Views\Deudor\ComposicionPago.cshtml" />
+    <Content Include="Views\Deudor\ComposicionPago2.cshtml" />
+    <Content Include="Views\Deudor\ComposicionPago3.cshtml" />
+    <Content Include="Views\Deudor\ComposicionPago4.cshtml" />
+    <Content Include="Views\Deudor\ComposicionPago5.cshtml" />
+    <Content Include="Views\Deudor\PropuestaPago.cshtml" />
+    <Content Include="Views\Deudor\PropuestaPago2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

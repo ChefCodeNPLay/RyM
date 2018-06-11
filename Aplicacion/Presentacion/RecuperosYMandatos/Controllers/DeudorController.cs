@@ -38,5 +38,33 @@ namespace RecuperosYMandatos.Controllers
         {
             return PartialView();
         }
+        public ActionResult ComposicionPago()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago2()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago3()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago4()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago5()
+        {
+            return PartialView();
+        }
+        public ActionResult PropuestaPago()
+        {
+            return PartialView();
+        }
+        public ActionResult PropuestaPago2()
+        {
+            return PartialView();
+        }
     }
 }

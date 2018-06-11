@@ -1,0 +1,109 @@
+﻿@model RecuperosYMandatos.Models.Deudor
+<div id='datosContacto'>
+    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {
+        <div class="row">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Propuesta de Pago</h3>
+                </div>
+                <div class="form-top-right">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form-bottom" id="contenedordatosContacto" style="height:100%;">
+                @Html.HiddenFor(model => model.ID)
+                <div class="form-group" align="center">
+                    <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:320px;">
+                </div>
+                <div class="form-group" align="center">
+                    @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
+                    <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="Gas Natural Ban" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="$1.100,00" class="my-nombre protip" id="celular3" style="height:40px;width:120px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="$269,24" class="my-nombre protip" id="celular3" style="height:40px;width:120px;">
+
+                </div>
+                <div class="form-group" align="center">
+                    <label style="color: #fff">
+                        Nuestro ejecutiva ha analizado plan de pago con el fin de que usted pueda regularizar su cuenta.
+                        Recuerde que un plan de pago es una obligación adquirida por el cliente la cual su incumplimiento
+                        tiene consecuencias administrativas y mayores costos para usted.
+                        <br />
+                        Al día de hoy usted posee una deuda de $1235,12 con Gas Natural Ban
+                        
+                    </label>
+                </div>
+                <div class="form-group" align="left">
+                    <table>
+                        <tr height="50px;">
+                            <td width="450px;"><label>Usted deberá pagar antes del 25 de este mes la suma de</label></td>
+                            <td>
+                                <input type="text" name="ID" placeholder="" value="$435,12" class="my-el protip1" style="width:150px;">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="form-group" align="center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Concepto</th>
+                                <th>Deuda</th>
+                                <th>Pago</th>
+                                <th>SubTotal</th>
+                                <th>Acción</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10/01/2018</th>
+                                <td>Debito Tarjeta Crédito</td>
+                                <td>$276,66</td>
+                                <td>$0,00</td>
+                                <td>$276,66</td>
+                                <td><a data-value="" href="javascript:void(0)" class="btnEdit">Informar Pago</a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10/03/2018</th>
+                                <td>Debito Tarjeta Crédito</td>
+                                <td>$276,66</td>
+                                <td>$0,00</td>
+                                <td>$553,32</td>
+                                <td><a data-value="" href="javascript:void(0)" class="btnEdit">Informar Pago</a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10/04/2018</th>
+                                <td>Debito Tarjeta Crédito</td>
+                                <td>$276,66</td>
+                                <td>$0,00</td>
+                                <td>$829,98</td>
+                                <td><a data-value="" href="javascript:void(0)" class="btnEdit">Informar Pago</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-group" align="center">
+                    <button type="submit" class="btn">Voy a Pagar el Plan de Pago Propuesto</button>
+                    <button type="submit" class="btn">Solicitar Otro Plan de Pago</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+

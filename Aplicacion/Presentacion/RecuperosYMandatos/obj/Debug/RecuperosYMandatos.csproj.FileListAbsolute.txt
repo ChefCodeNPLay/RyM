@@ -411,4 +411,3 @@ C:\Desarrollos\RecuperosYMandatos\git\RyM\Aplicacion\Presentacion\RecuperosYMand
 C:\Desarrollos\RecuperosYMandatos\git\RyM\Aplicacion\Presentacion\RecuperosYMandatos\obj\Debug\en\RecuperosYMandatos.resources.dll
 C:\Desarrollos\RecuperosYMandatos\git\RyM\Aplicacion\Presentacion\RecuperosYMandatos\obj\Debug\RecuperosYMandatos.dll
 C:\Desarrollos\RecuperosYMandatos\git\RyM\Aplicacion\Presentacion\RecuperosYMandatos\obj\Debug\RecuperosYMandatos.pdb
-C:\Desarrollos\RecuperosYMandatos\git\RyM\Aplicacion\Presentacion\RecuperosYMandatos\obj\Debug\RecuperosYMandatos.csprojResolveAssemblyReference.cache
