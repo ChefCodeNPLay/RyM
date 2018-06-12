@@ -28,7 +28,7 @@ namespace RecuperosYMandatos.Controllers
 
         public ActionResult DatosContacto()
         {
-            return View();
+            return PartialView();
         }
 
         public ActionResult ConfirmacionValidacion()

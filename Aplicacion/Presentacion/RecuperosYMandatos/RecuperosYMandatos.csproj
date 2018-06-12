@@ -276,13 +276,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Preguntas\Index.cshtml" />
     <Content Include="Views\Preguntas\Pregunta1.cshtml" />
     <Content Include="Views\Home\Registracion.cshtml" />
-    <Content Include="Views\Preguntas\IndexPartial.cshtml" />
     <Content Include="Views\Home\DatosContacto.cshtml" />
     <Content Include="Views\Home\ConfirmacionValidacion.cshtml" />
-    <Content Include="Views\Deudor\Detalle.cshtml" />
     <Content Include="Views\Shared\Partials\ModalGenerico.cshtml" />
     <Content Include="Views\Shared\Partials\ModalGenericoListErrores.cshtml" />
     <Content Include="Views\Home\SinIdentificacion.cshtml" />

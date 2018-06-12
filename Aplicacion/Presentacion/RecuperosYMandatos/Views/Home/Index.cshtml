@@ -8,7 +8,7 @@
     @*@using (Ajax.BeginForm("DeudorGetById", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion", OnBegin = "deudor.confirmarDatoIdentificacion('#contenedordatoIdentificacion');" }))*@
 
 
-   @using (Ajax.BeginForm("PropuestaPago2", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion" }))
+   @using (Ajax.BeginForm("DatosContacto", "Home", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datoIdentificacion" }))
     {
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 form-box">
