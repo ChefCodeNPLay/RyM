@@ -28,10 +28,15 @@ namespace RecuperosYMandatos.Controllers
 
         public ActionResult DatosContacto()
         {
-            return View();
+            return PartialView();
         }
 
         public ActionResult ConfirmacionValidacion()
+        {
+            return View();
+        }
+
+        public ActionResult OlvidoContraseña()
         {
             return View();
         }

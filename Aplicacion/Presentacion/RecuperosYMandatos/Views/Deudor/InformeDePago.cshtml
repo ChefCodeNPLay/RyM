@@ -1,0 +1,114 @@
+﻿@model RecuperosYMandatos.Models.Deudor
+<div id='datosContacto'>
+    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {
+        <div class="row">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Composición de la deuda</h3>
+                </div>
+                <div class="form-top-right">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form-bottom" id="contenedordatosContacto" style="height:100%;">
+                @Html.HiddenFor(model => model.ID)
+                <div class="form-group" align="center">
+                    <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:320px;">
+                </div>
+                <div class="form-group" align="center">
+                    @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
+                    <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="Gas Natural Ban" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                </div>
+                <div class="form-group" align="center">
+                    <h3 style="color: #fff">Informe de Pago sobre la deuda</h3>
+                </div>
+                <div class="form-group" align="center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Concepto</th>
+                                <th>Deuda</th>
+                                <th>Pago</th>
+                                <th>SubTotal</th>
+                                <th>Intereses</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10/01/2018</th>
+                                <td>Período 11/2017 - 12/2017</td>
+                                <td>$100,00</td>
+                                <td>$0,00</td>
+                                <td>$100,00</td>
+                                <td>$34,12</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+
+
+                <div class="form-group" align="left">
+                    <table>
+                        <tr height="50px;">
+                            <td width="280px;" ><label>Indique Fecha del pago</label></td>
+                            <td>
+                                <input type="text" name="ID" placeholder="" class="my-el protip1" style="width:150px;">
+                            </td>
+                        </tr>
+                        <tr height="50px;">
+                            <td><label>Indique monto</label></td>
+                            <td>
+                                <input type="text" name="ID" placeholder="" class="my-el protip1" style="width:150px;">
+                            </td>
+                        </tr>
+                        <tr height="50px;">
+                            <td>
+                                <label>Indique Forma de Pago</label>
+                            </td>
+                            <td>
+                                @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "Seleccione", Value = "#" },
+                       new SelectListItem() { Text = "Tarjeta Crédito", Value = "#" }, }, "Seleccione", new { @style = "height:40px; width:150px; font-size:13px;", @class = "form-control" })
+                                @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "Seleccione", Value = "#" },
+                       new SelectListItem() { Text = "American Express", Value = "#" }, }, "Seleccione", new { @style = "height:40px; width:150px; font-size:13px;", @class = "form-control" })
+
+                            </td>
+                        </tr>
+                        <tr height="50px;">
+                            <td>
+                                <label>Por favor, Adjunte Comprobante</label>
+                            </td>
+                            <td>
+                                <input name="myFile" type="file" value="Adjuntar" class="form-control" width="10">
+                            </td>
+                        </tr>
+                        <tr height="50px;">
+                            <td>
+                                    <label>Mensaje Adicional</label>
+                            </td>
+                            <td>
+                                <textarea name="Text1" cols="60" rows="15" ></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                
+                
+                
+
+                <div class="form-group" align="center">
+                    <button type="submit" class="btn">Registrar Informe Pago</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+

@@ -25,5 +25,46 @@ namespace RecuperosYMandatos.Controllers
             new Deudor().SaveOrUpdate(unDeudor);
             return PartialView("~/Views/Home/ConfirmacionValidacion.cshtml");
         }
+
+        public ActionResult Acreencias()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionDeuda()
+        {
+            return PartialView();
+        }
+        public ActionResult InformeDePago()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago2()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago3()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago4()
+        {
+            return PartialView();
+        }
+        public ActionResult ComposicionPago5()
+        {
+            return PartialView();
+        }
+        public ActionResult PropuestaPago()
+        {
+            return PartialView();
+        }
+        public ActionResult PropuestaPago2()
+        {
+            return PartialView();
+        }
     }
 }

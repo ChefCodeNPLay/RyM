@@ -124,7 +124,7 @@ namespace RecuperosYMandatos.Recursos {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a En caso contrario, por favor ingrese su número de documento.
+        ///   Busca una cadena traducida similar a En caso contrario, por favor ingrese su número de identificación enviado por correo/mensaje, su Documento de Identidad/Pasaporte, o Código único de Identificación de Personas Jurídicas y/o Tributaria.
         /// </summary>
         public static string strIndex_VIII {
             get {

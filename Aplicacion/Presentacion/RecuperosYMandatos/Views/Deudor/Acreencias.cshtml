@@ -1,0 +1,100 @@
+﻿@model RecuperosYMandatos.Models.Deudor
+<div id='datosContacto'>
+    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {
+        <div class="row">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Acreencias con nuestros clientes</h3>
+                </div>
+                <div class="form-top-right">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form-bottom" id="contenedordatosContacto" style="height:100%;">
+                @Html.HiddenFor(model => model.ID)
+                <div class="form-group" align="center">
+                    <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:320px;">
+                </div>
+                <div class="form-group" align="center">
+                    @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
+                    <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                </div>
+                <div class="form-group" align="center">
+                    <label>
+                        Con su nivel de respuesta hemos podido identificarlos para 3 de las 5 cuentas que posee deuda registrada. Rogamos comunicarse
+                        al 0800-123-4567 a fin de que un ejecutivo de cuenta lo asista en la identificación de las 2 cuentas restantes.
+                        O inicie una nueva secuencia de preguntas para asegurar su relación.
+                    </label>
+                </div>
+                <div class="form-group" align="center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Acreedor</th>
+                                <th>Deuda Pura</th>
+                                <th>Intereses</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <th scope="row">Gas Natural Ban</th>
+                                    <td>$1.100,00</td>
+                                    <td>$269,24</td>
+                                    <td>
+                                        <a data-value="" href="@Url.Action("ComposicionDeuda", "Deudor")" class="btnEdit">Detalle</a> |
+                                        <a data-value="" href="javascript:void(0)" class="btnEdit">Formas de Pago</a>
+                                    </td>
+                                </tr>
+                           </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Garbarino</th>
+                                <td>$15.230,00</td>
+                                <td>$2.335,45</td>
+                                <td>
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Detalle</a> |
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Formas de Pago</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Swiss Medical</th>
+                                <td>$35.230,00</td>
+                                <td>$3.555,45</td>
+                                <td>
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Detalle</a> |
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Formas de Pago</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Requiere Verificación Adicional</th>
+                                <td>$23.232,00</td>
+                                <td>No Calculado</td>
+                                <td>
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Verificar Identidad</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Requiere Verificación Adicional</th>
+                                <td>$12.130,00</td>
+                                <td>No Calculado</td>
+                                <td>
+                                    <a data-value="" href="javascript:void(0)" class="btnEdit">Verificar Identidad</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>

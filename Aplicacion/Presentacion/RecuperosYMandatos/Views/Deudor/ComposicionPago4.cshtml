@@ -1,0 +1,53 @@
+﻿@model RecuperosYMandatos.Models.Deudor
+<div id='datosContacto'>
+    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {
+        <div class="row">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Composición de Pago</h3>
+                </div>
+                <div class="form-top-right">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form-bottom" id="contenedordatosContacto" style="height:100%;">
+                @Html.HiddenFor(model => model.ID)
+                <div class="form-group" align="center">
+                    <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:320px;">
+                </div>
+                <div class="form-group" align="center">
+                    @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
+                    <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="Gas Natural Ban" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="$1.100,00" class="my-nombre protip" id="celular3" style="height:40px;width:120px;">
+                    <input type="text" name="Prefijos" placeholder="Gas Natural Ban" value="$269,24" class="my-nombre protip" id="celular3" style="height:40px;width:120px;">
+
+                </div>
+                <div class="form-group" align="center">
+                    <label style="color: #fff">
+                        Un plan de pago es una obligación adquirida por el Cliente la cual su incumplimiento tiene consecuencias
+                        administrativas y mayores costos para usted.
+                        Al día de hoy usted posee una deuda de $1235,12 con Gas Natural Ban. La
+                        intención de la companía es seguir proveyendo suministro todos los días,
+                        pero sin el pago de sus clientes, es imposible mantener el flujo de gas en todas las casas.
+                        Si usted puede pagar el remanente de su deuda antes del 25 de este mes (7 días antes del cierre de cartera),
+                        podría regularizar totalmente su servicio.
+                    </label>
+                </div>
+
+                <div class="form-group" align="center">
+                    <button type="submit" class="btn">Voy a Pagar / Informar Pago</button>
+                    <button type="submit" class="btn">No estoy en condiciones de pagar</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+

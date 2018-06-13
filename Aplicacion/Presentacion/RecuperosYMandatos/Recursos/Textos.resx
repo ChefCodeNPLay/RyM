@@ -139,6 +139,6 @@
     <value>Continuar</value>
   </data>
   <data name="strIndex_VIII" xml:space="preserve">
-    <value>En caso contrario, por favor ingrese su número de documento</value>
+    <value>En caso contrario, por favor ingrese su número de identificación enviado por correo/mensaje, su Documento de Identidad/Pasaporte, o Código único de Identificación de Personas Jurídicas y/o Tributaria</value>
   </data>
 </root>

@@ -1,0 +1,41 @@
+﻿
+@model RecuperosYMandatos.Models.Deudor
+<div id='datosContacto'>
+    @using (Ajax.BeginForm("SaveOrUpdate", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 form-box">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <h3>¿Olvidó su contraseña?</h3>
+                    </div>
+                    <div class="form-top-right">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="form-bottom" id="contenedordatosContacto" style="height:100%;">
+                    <div class="form-group" align="center">
+                        <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:300px;">
+                    </div>
+
+                    <div class="form-group" align="center">
+                        @Html.DropDownList("www", new List<SelectListItem>() { new SelectListItem() { Text = "Seleccione su pregunta de Seguridad", Value = "#" },
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "Seleccione su pregunta de Seguridad", new { @style = "height:40px; width:400px; font-size:13px;", @class = "form-control" })
+                    </div>
+                    <div class="form-group" align="center">
+                        <input type="text" name="Prefijoa" placeholder="Respuesta" class="my-nombre protip" id="celular4" style="height:40px;width:400px;">
+                    </div>
+                    <div class="form-group" align="center">
+                        <label>Se enviará un código de activación a su celular, por SMS y enlace de reactivación por e@mail, VERIFIQUE EN SU CASILLA DE SPAM</label>
+                    </div>
+
+                    <div class="form-group" align="center">
+                        <button type="submit" class="btn">Recuperar Contraseña</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+</div>
+
