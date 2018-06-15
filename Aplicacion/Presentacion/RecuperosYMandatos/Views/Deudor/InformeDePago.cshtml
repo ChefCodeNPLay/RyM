@@ -1,6 +1,6 @@
 ﻿@model RecuperosYMandatos.Models.Deudor
 <div id='datosContacto'>
-    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    @using (Ajax.BeginForm("ComposicionPago", "Deudor", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
     {
         <div class="row">
             <div class="form-top">

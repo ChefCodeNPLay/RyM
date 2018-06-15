@@ -17,13 +17,13 @@
                     @Html.HiddenFor(model => model.ID)
                     <div class="form-group" align="center">
                             <label>Número de identificación proporcionado</label>
-                            <input type="text" name="ID" placeholder="" class="my-el protip1" style="width:100px;">
+                            <input type="text" name="ID" placeholder="" value="12345678" class="my-el protip1" style="width:110px;">
                       </div>
                     <div class="form-group" align="center">
-                        <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:330px;">
+                        <input type="text" name="Email" placeholder="Email" class="my-nombre protip" id="email" style="width:485px;">
                     </div>
                     <div class="form-group" align="center">
-                        <input type="text" name="Codarea" placeholder="Cód.área" class="my-nombre protip" id="celular" style="width:90px;">
+                        <input type="text" name="Codarea" placeholder="Cód.área" class="my-nombre protip" id="celular" style="width:100px;">
                         <input type="text" name="Prefijo1" placeholder="Prefijo" class="my-nombre protip" id="celular1" style="width:85px;">
                         <input type="text" name="Prefijo" placeholder="Número de teléfono" class="my-nombre protip" id="celular2" style="width:160px;">
                         @Html.DropDownList("Compania", new List<SelectListItem>() { new SelectListItem() { Text = "Claro", Value = "#" },
@@ -31,26 +31,25 @@
                     </div>
                     <div class="form-group" align="center">
                         @Html.DropDownList("Pais", new List<SelectListItem>() {new SelectListItem() { Text = "Argentina", Value = "#" },
-                        new SelectListItem() { Text = "Mexico", Value = "#" }, }, "Pais", new { @style = "height:40px; width:235px; font-size:13px;", @class = "form-control" })
-                        @Html.DropDownList("Provincia", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
-                        new SelectListItem() { Text = "CUIL", Value = "#" }, }, "Provincia", new { @style = "height:40px; width:235px; font-size:13px;", @class = "form-control" })
+                        new SelectListItem() { Text = "Mexico", Value = "#" }, }, "Pais", new { @style = "height:40px; width:237px; font-size:13px;", @class = "form-control" })
+                        @Html.DropDownList("Provincia", new List<SelectListItem>() { new SelectListItem() { Text = "Buenos Aires", Value = "#" },
+                        new SelectListItem() { Text = "Santa Fe", Value = "#" }, }, "Provincia", new { @style = "height:40px; width:237px; font-size:13px;", @class = "form-control" })
                     </div>
                     <div class="form-group" align="center">
                         @Html.DropDownList("ee", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
-                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
-                        <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:220px;">
+                        }, "CUIT", new { @style = "height:40px; width:150px; font-size:13px;", @class = "form-control" })
+                        <input type="text" name="Prefijos" placeholder="Su identidad" class="my-nombre protip" id="celular3" style="height:40px;width:324px;">
                     </div>
                     <div class="form-group" align="center">
                         @Html.DropDownList("www", new List<SelectListItem>() { new SelectListItem() { Text = "CUIT", Value = "#" },
-                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:100px; font-size:13px;", @class = "form-control" })
-                        <input type="text" name="Prefijoa" placeholder="Identidad Persona Jurídica" class="my-nombre protip" id="celular4" style="height:40px;width:220px;">
+                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "CUIT", new { @style = "height:40px; width:150px; font-size:13px;", @class = "form-control" })
+                        <input type="text" name="Prefijoa" placeholder="Identidad Persona Jurídica" class="my-nombre protip" id="celular4" style="height:40px;width:324px;">
                     </div>
                     <div class="form-group" align="center">
-                        @Html.DropDownList("www", new List<SelectListItem>() { new SelectListItem() { Text = "Seleccione su pregunta de Seguridad", Value = "#" },
-                       new SelectListItem() { Text = "CUIL", Value = "#" }, }, "Seleccione su pregunta de Seguridad", new { @style = "height:40px; width:400px; font-size:13px;", @class = "form-control" })
+                        @Html.DropDownList("www", new List<SelectListItem>() { new SelectListItem() { Text = "¿Cómo se llama mi mascota?", Value = "#" }, }, "Seleccione su pregunta de Seguridad", new { @style = "height:40px; width:474px; font-size:13px;", @class = "form-control" })
                     </div>
                     <div class="form-group" align="center">
-                        <input type="text" name="Prefijoa" placeholder="Respuesta" class="my-nombre protip" id="celular4" style="height:40px;width:400px;">
+                        <input type="text" name="Prefijoa" placeholder="Respuesta" class="my-nombre protip" id="celular4" style="height:40px;width:474px;">
                     </div>
                     <div class="form-group" align="center">
                         <label>Se enviará un código de activación a su celular, por SMS y enlace de reactivación por e@mail - VERIFIQUE EN SU CASILLA DE SPAM -</label>
