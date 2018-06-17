@@ -1,7 +1,7 @@
 ﻿@model RecuperosYMandatos.Models.Deudor
 <div id='datosContacto'>
-    @using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
-    {
+    @*@using (Ajax.BeginForm("Pregunta2", "Preguntas", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "datosContacto", OnBegin = "deudor.confirmarDatosContacto('#contenedordatosContacto');" }))
+    {*@
         <div class="row">
             <div class="form-top">
                 <div class="form-top-left">
@@ -44,8 +44,8 @@
                                     <td>$1.100,00</td>
                                     <td>$269,24</td>
                                     <td>
-                                        <a data-value="" href="@Url.Action("ComposicionDeuda", "Deudor")" class="btnEdit">Detalle</a> |
-                                        <a data-value="" href="javascript:void(0)" class="btnEdit">Formas de Pago</a>
+                                        <a href="@Url.Action("InformeDePago", "Deudor")" class="btnEdit">Detalle</a> |
+                                        <a href="javascript:void(0)" class="btnEdit">Formas de Pago</a>
                                     </td>
                                 </tr>
                            </tbody>
@@ -96,5 +96,5 @@
                 </div>
             </div>
         </div>
-    }
+    @*}*@
 </div>

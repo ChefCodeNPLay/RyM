@@ -32,15 +32,15 @@ namespace RecuperosYMandatos.Controllers
         }
         public ActionResult ComposicionDeuda()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult InformeDePago()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult ComposicionPago()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult ComposicionPago2()
         {

@@ -10,10 +10,12 @@
                 title: 'Por favor, ingrese una identificación correcta',
                 scheme: 'blue'
             });
+            return false;
         } 
      },
      validarCampoIdentificacion: function (model, lisErroes) {
-        if (!model.ID) { lisErroes.push("Por favor, ingrese su identificación."); }
+         if ((!model.ID)||(model.ID!=="12345678"))
+         { lisErroes.push("Por favor, ingrese su identificación."); }
         return lisErroes;
      },
      confirmarDatosContacto: function (contenedor) {
