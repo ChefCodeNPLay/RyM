@@ -18,10 +18,11 @@
          { lisErroes.push("Por favor, ingrese su identificación."); }
         return lisErroes;
      },
-     confirmarDatosContacto: function (contenedor) {
-         var model = build.renderizarModelFrom(contenedor);
-         deudor.validarDatosContacto(model);
-         //custom.setearLoader();
+     confirmarDatosContacto: function () {
+         custom.setearLoader();
+     },
+     confirmarPregunta1: function() {
+         custom.setearLoader();
      },
      validarDatosContacto: function (model) {
          var el;

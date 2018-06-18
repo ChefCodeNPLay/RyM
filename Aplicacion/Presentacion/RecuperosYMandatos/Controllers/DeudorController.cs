@@ -32,7 +32,7 @@ namespace RecuperosYMandatos.Controllers
         }
         public ActionResult ComposicionDeuda()
         {
-            return View();
+            return PartialView();
         }
         public ActionResult InformeDePago()
         {
@@ -40,31 +40,31 @@ namespace RecuperosYMandatos.Controllers
         }
         public ActionResult ComposicionPago()
         {
-            return View();
+            return PartialView();
         }
         public ActionResult ComposicionPago2()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult ComposicionPago3()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult ComposicionPago4()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult ComposicionPago5()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult PropuestaPago()
         {
-            return PartialView();
+            return View();
         }
         public ActionResult PropuestaPago2()
         {
-            return PartialView();
+            return View();
         }
     }
 }

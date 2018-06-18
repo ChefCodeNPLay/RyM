@@ -16,7 +16,7 @@ namespace RecuperosYMandatos.Controllers
 
         public ActionResult Pregunta1()
         {
-            return View();
+            return PartialView();
         }
 
 
