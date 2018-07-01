@@ -1,10 +1,23 @@
+
+
+
+Login URL: https://pyp.repositoryhosting.com/login
+Username: carloskoz
+Password: curipan11
+
+
+
+
+==============================
+ESTE NO VA MAS
+==============================
+
+
+
 gitlab.pyp.com.ar
 Name: Carlos Kozlowski
 Username: carloskoz
 Email: carloskoz.mc@gmail.com
-
-
-
 
 Name: Gaston Andrade
 Username: gandrade
